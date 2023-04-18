@@ -2,7 +2,7 @@
   "name": "refined-h264ify",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Improves YouTube playback performance by using H.264 codec.",
+  "description": "Improves YouTube playback performance by using your desired codecs.",
   "homepage_url": "https://github.com/Edwin-Zarco/refined-h264ify",
   "browser_action": {
     "default_icon": {
