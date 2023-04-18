@@ -1,6 +1,7 @@
 /**
  * The MIT License (MIT)
  *
+ * Copyright (c) 2023 Edwin Zarco
  * Copyright (c) 2019 alextrv
  * Copyright (c) 2015 erkserkserks
  *
