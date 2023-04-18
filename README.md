@@ -9,3 +9,7 @@ It currently only supports YouTube.
 Install for Firefox based browsers: N/A
 
 Install for Chromium based browsers: N/A
+
+# To-Do
+- [x] Implement a dark theme
+- [ ] Update for Manifest V3
