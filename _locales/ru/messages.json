@@ -1,11 +1,11 @@
 {
   "extensionDescription": {
-    "message": "Выбирайте сами видеокодек, который YouTube будет вам показывать",
+    "message": "Выберите кодеки для воспроизведения YouTube",
     "description": "Extension description"
   },
 
   "optionsTitle": {
-    "message": "enhanced-h264ify"
+    "message": "refined-h264ify"
   },
 
   "optionsBlock60fps": {
@@ -13,7 +13,7 @@
   },
 
   "optionsBlockH264": {
-    "message": "Блокировать h264"
+    "message": "Блокировать H.264"
   },
 
   "optionsBlockVP8": {
