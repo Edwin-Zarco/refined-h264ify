@@ -1,25 +1,25 @@
+// Define variables for checkbox elements
+const block60fpsCheckbox = document.getElementById('block_60fps');
+const blockH264Checkbox = document.getElementById('block_h264');
+const blockVP8Checkbox = document.getElementById('block_vp8');
+const blockVP9Checkbox = document.getElementById('block_vp9');
+const blockAV1Checkbox = document.getElementById('block_av1');
+const disableLNCheckbox = document.getElementById('disable_LN');
+
 // Saves options to chrome.storage
-function save_options() {
-  var block_60fps = document.getElementById('block_60fps').checked;
-  var block_h264 = document.getElementById('block_h264').checked;
-  var block_vp8 = document.getElementById('block_vp8').checked;
-  var block_vp9 = document.getElementById('block_vp9').checked;
-  var block_av1 = document.getElementById('block_av1').checked;
-  // LN stands for Loudness Normalization
-  var disable_LN = document.getElementById('disable_LN').checked;
+function saveOptions() {
   chrome.storage.local.set({
-    block_60fps: block_60fps,
-    block_h264: block_h264,
-    block_vp8: block_vp8,
-    block_vp9: block_vp9,
-    block_av1: block_av1,
-    disable_LN: disable_LN
+    block_60fps: block60fpsCheckbox.checked,
+    block_h264: blockH264Checkbox.checked,
+    block_vp8: blockVP8Checkbox.checked,
+    block_vp9: blockVP9Checkbox.checked,
+    block_av1: blockAV1Checkbox.checked,
+    disable_LN: disableLNCheckbox.checked
   });
 }
 
 // Restores checkbox state using the options stored in chrome.storage.
-function restore_options() {
-  // Default values
+function restoreOptions() {
   chrome.storage.local.get({
     block_60fps: false,
     block_h264: false,
@@ -28,25 +28,26 @@ function restore_options() {
     block_av1: true,
     disable_LN: false
   }, function(options) {
-    document.getElementById('block_60fps').checked = options.block_60fps;
-    document.getElementById('block_h264').checked = options.block_h264;
-    document.getElementById('block_vp8').checked = options.block_vp8;
-    document.getElementById('block_vp9').checked = options.block_vp9;
-    document.getElementById('block_av1').checked = options.block_av1;
-    document.getElementById('disable_LN').checked = options.disable_LN;
+    block60fpsCheckbox.checked = options.block_60fps;
+    blockH264Checkbox.checked = options.block_h264;
+    blockVP8Checkbox.checked = options.block_vp8;
+    blockVP9Checkbox.checked = options.block_vp9;
+    blockAV1Checkbox.checked = options.block_av1;
+    disableLNCheckbox.checked = options.disable_LN;
   });
 }
 
 // Restore saved options when extension is loaded
-document.addEventListener('DOMContentLoaded', restore_options);
+document.addEventListener('DOMContentLoaded', restoreOptions);
 
 // Save options when checkboxes are clicked
-var checkboxes = document.getElementsByClassName('checkbox');
-for (var i = 0; i < checkboxes.length; i++) {
-  checkboxes[i].addEventListener('click', save_options)
-}
+const checkboxes = document.querySelectorAll('.checkbox');
+checkboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('click', saveOptions);
+});
 
 // l10n
-for (let element of document.querySelectorAll('[data-l10n-id]')) {
+const elementsWithDataL10nId = document.querySelectorAll('[data-l10n-id]');
+for (const element of elementsWithDataL10nId) {
   element.textContent = chrome.i18n.getMessage(element.dataset.l10nId);
 }
