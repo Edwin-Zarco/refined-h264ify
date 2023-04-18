@@ -1,21 +1,16 @@
 {
-  "name": "enhanced-h264ify",
-  "version": "2.1.0",
-  "manifest_version": 2,
-  "description": "__MSG_extensionDescription__",
-  "homepage_url": "https://github.com/alextrv/enhanced-h264ify",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
+  "name": "refined-h264ify",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Improves YouTube playback performance by using H.264 codec.",
+  "homepage_url": "https://github.com/Edwin-Zarco/refined-h264ify",
   "browser_action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "enhanced-h264ify",
+    "default_title": "refined-h264ify",
     "default_popup": "options.html"
   },
   "content_scripts": [
@@ -37,5 +32,7 @@
   "options_ui": {
     "page": "options.html"
   },
-  "permissions": [ "storage" ]
+  "permissions": [
+    "storage"
+  ]
 }
