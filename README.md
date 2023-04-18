@@ -13,4 +13,5 @@ Install for Chromium based browsers: N/A
 # To-Do
 - [x] Implement a dark theme
 - [x] Add support for YouTube Kids
+- [ ] Publish extension
 - [ ] Update for Manifest V3
