@@ -1,11 +1,11 @@
 {
   "extensionDescription": {
-    "message": "Choose what video codec YouTube should play for you",
+    "message": "Výběr kodeků pro přehrávání ve službě YouTube",
     "description": "Extension description"
   },
 
   "optionsTitle": {
-    "message": "Možnosti enhanced-h264ify"
+    "message": "refined-h264ify"
   },
 
   "optionsBlock60fps": {
@@ -13,7 +13,7 @@
   },
 
   "optionsBlockH264": {
-    "message": "Blokovat h264"
+    "message": "Blokovat H.264"
   },
 
   "optionsBlockVP8": {
