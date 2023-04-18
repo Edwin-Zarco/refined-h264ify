@@ -1,19 +1,19 @@
 {
   "extensionDescription": {
-    "message": "Choose what video codec YouTube should play for you",
+    "message": "Pick your YouTube playback codecs",
     "description": "Extension description"
   },
 
   "optionsTitle": {
-    "message": "enhanced-h264ify"
+    "message": "refined-h264ify"
   },
 
   "optionsBlock60fps": {
-    "message": "Block 60fps video"
+    "message": "Block 60fps videos"
   },
 
   "optionsBlockH264": {
-    "message": "Block h264"
+    "message": "Block H.264"
   },
 
   "optionsBlockVP8": {
