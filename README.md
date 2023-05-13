@@ -14,9 +14,11 @@ In addition to the core functionality, refined-h264ify introduces several new fe
 It currently only supports YouTube.
 
 ## Installation
-Install for Firefox based browsers: N/A
+Install for Firefox based browsers: ![AMO](https://addons.mozilla.org/en-US/firefox/addon/refined-h264ify/)
 
-Install for Chromium based browsers: N/A
+![Mozilla Add-on](https://img.shields.io/amo/stars/refined-h264ify?style=flat-square)
+
+Install for Chromium based browsers: Load unpacked extension until update to Manifest v3
 
 ## To-Do
 - [x] Implement a dark theme
