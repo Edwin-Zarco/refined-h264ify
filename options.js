@@ -37,7 +37,7 @@ function restoreOptions() {
   });
 }
 
-// Restore saved options when extension is loaded
+// Restore saved options when the extension is loaded
 document.addEventListener('DOMContentLoaded', restoreOptions);
 
 // Save options when checkboxes are clicked
