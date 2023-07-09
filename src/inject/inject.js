@@ -46,22 +46,22 @@ function inject() {
     // Check if a video type is allowed
     return function(type) {
       if (!type) return '';
-      const disallowed_types = [];
+      const disallowedTypes = [];
       if (localStorage.getItem('refined-h264ify-block_h264') === 'true') {
-        disallowed_types.push('avc');
+        disallowedTypes.push('avc');
       }
       if (localStorage.getItem('refined-h264ify-block_vp8') === 'true') {
-        disallowed_types.push('vp8');
+        disallowedTypes.push('vp8');
       }
       if (localStorage.getItem('refined-h264ify-block_vp9') === 'true') {
-        disallowed_types.push('vp9', 'vp09');
+        disallowedTypes.push('vp9', 'vp09');
       }
       if (localStorage.getItem('refined-h264ify-block_av1') === 'true') {
-        disallowed_types.push('av01');
+        disallowedTypes.push('av01');
       }
 
-      // If video type is in disallowed_types, say we don't support them
-      for (const disallowedType of disallowed_types) {
+      // If video type is in disallowedTypes, say we don't support them
+      for (const disallowedType of disallowedTypes) {
         if (type.indexOf(disallowedType) !== -1) return '';
       }
 
