@@ -14,15 +14,17 @@ In addition to the core functionality, refined-h264ify introduces several new fe
 It currently only supports YouTube.
 
 ## Installation
-Install for Firefox based browsers: https://addons.mozilla.org/en-US/firefox/addon/refined-h264ify
+Install for Firefox based browsers:
+https://addons.mozilla.org/en-US/firefox/addon/refined-h264ify
 
 ![Mozilla Add-on](https://img.shields.io/amo/stars/refined-h264ify?style=flat-square)
 
-Install for Chromium based browsers: Load unpacked extension until update to Manifest v3
+Install for Chromium based browsers:
+Load unpacked extension until update to Manifest v3
 
 ## To-Do
 - [x] Implement a dark theme
 - [x] Add support for YouTube Kids
 - [x] Publish extension to AMO
 - [ ] Update for Manifest V3
-- [ ] Publish to Chrome Web Store
+- [ ] Publish extension to Chrome Web Store
