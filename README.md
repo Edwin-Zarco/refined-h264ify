@@ -23,5 +23,6 @@ Install for Chromium based browsers: Load unpacked extension until update to Man
 ## To-Do
 - [x] Implement a dark theme
 - [x] Add support for YouTube Kids
-- [ ] Publish extension
+- [x] Publish extension to AMO
 - [ ] Update for Manifest V3
+- [ ] Publish to Chrome Web Store
