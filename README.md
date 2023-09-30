@@ -11,7 +11,7 @@ refined-h264ify is a browser extension available for Firefox and Chromium based 
 
 In addition to the core functionality, refined-h264ify introduces several new features, such as manual blocking of H.264, VP8, VP9, and AV1 codecs, as well as 60fps video support. By default, the extension blocks everything except for H.264 and 60fps video, allowing you to enjoy a smoother and more efficient video playback experience.
 
-It currently only supports YouTube.
+It currently only supports YouTube and YouTube Kids.
 
 ## Installation
 Install for Firefox based browsers:
