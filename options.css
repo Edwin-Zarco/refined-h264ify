@@ -14,3 +14,7 @@ body {
   background-color: var(--page-bg-color);
   color: var(--page-fg-color);
 }
+
+li{
+  margin: 7px 0;
+}
